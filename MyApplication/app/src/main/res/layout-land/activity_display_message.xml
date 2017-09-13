@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="io.github.travesto.myapplication.DisplayMessageActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="589dp"
+        android:layout_height="282dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_x="0px"
+        android:layout_y="25px"
+        android:scrollbars="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifTextView"
+        android:layout_marginTop="-521dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textSize="24sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <pl.droidsonroids.gif.GifTextView
+                android:id="@+id/gifTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:layout_weight="1"
+                android:background="@drawable/bob"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/scrollView"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/scrollView"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="24dp"
+                android:lines="38"
+                android:text="Supreme Chancellor: Did you ever hear the tragedy of Darth Plagueis the wise?\nAnakin Skywalker: No.\nSupreme Chancellor: I thought not. It's not a story the Jedi would tell you. It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and  so wise he could use the Force to influence the midichlorians to create life...  He had such a knowledge of the dark side that he could even keep the ones he  cared about from dying.\nAnakin Skywalker: He could actually save people from death?\nSupreme Chancellor: The dark side of the Force is a pathway to many abilities  some consider to be unnatural.\nAnakin Skywalker: What happened to him?\nSupreme Chancellor: He became so powerful... the only thing he was afraid of  was losing his power, which eventually, of course, he did. Unfortunately, he  taught his apprentice everything he knew, then his apprentice killed him in his  sleep. It's ironic he could save others from death, but not himself.\nAnakin Skywalker: Is it possible to learn this power?\nSupreme Chancellor: Not from a Jedi."
+                android:textSize="22sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gifTextView" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
